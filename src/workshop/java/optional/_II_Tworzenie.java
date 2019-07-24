@@ -28,6 +28,14 @@ public class _II_Tworzenie {
         System.out.println(ofNullable.toString());
         System.out.println(of.toString());
 
+        Optional<String> myEmpty = Optional.empty();
+        Optional<String> myOfNullable = Optional.ofNullable(null);
+        Optional<String> myOf = Optional.of("Marek");
+
+        System.out.println(myEmpty);
+        System.out.println(ofNullable.toString());
+        System.out.println(of.toString());
+
     }
 }
 
