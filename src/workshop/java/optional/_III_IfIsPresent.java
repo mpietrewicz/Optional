@@ -23,5 +23,13 @@ public class _III_IfIsPresent {
         }
 
         optional.ifPresent(s -> System.out.printf("Znaleziono wartość: %s, użyto ifPresent %n",s));
+
+        Car car = new Car("Tesla", "3");
+        Optional<Car> optionalCar = Optional.of(car);
+        if (optionalCar.isPresent()) {
+            System.out.printf("Znaleziono samochód: %s, model: %s%n", car.getName(), car.getModel());
+        }
+        optionalCar.ifPresent(s -> System.out.printf("Znaleziono samochód: %s, model: %s%n", s.getName(), s.getModel()));
+
     }
 }
